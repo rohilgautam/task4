@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentication System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="auth-container">
+      
+      <h2>Login</h2>
+      <form id="login-form">
+          <label for="login-username">Username or email address </label>
+          <input type="text" id="login-username" required>
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" required>
+          <button type="submit">Login</button>
+        </form>
+        <p> Create a new account <a class="register" href = "register.html">Register </a> </p>
+    <p class="message" id="message"></p>
+  </div>
+
+  <div class="container" id="secured-page">
+    <h2>Welcome to the Secured Page!</h2>
+    <p>You have successfully logged in.</p>
+    <button id="logout-btn">Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
